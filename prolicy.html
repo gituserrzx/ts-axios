@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0">
+	<link rel="stylesheet" href="jjt.css">
+	<title>聚匠堂</title>
+</head>
+
+<body>
+	<!-- 顶部 -->
+	<div class="top">
+		<div class="middle">
+			<img class="left" src="./img/logo.png" alt="">
+			<div class="right">
+				<span>首页</span>
+				<span><a href="#about">关于我们</a></span>
+				<span><a href="#intro">APP介绍</a></span>
+				<span class="app">
+					聚匠堂APP下载
+					<img class="ewm" src="./img/ewm.png">
+				</span>
+			</div>
+		</div>
+	</div>
+	<!-- 二维码 -->
+	<div class="code">
+		<img class="banner" src="./img/banner.png" alt="">
+		<div class="r">
+			<div class="jjt">聚匠堂-家具行业管家</div>
+			<div class="dz">为您打造家具行业前所未有的体验与享受</div>
+		</div>
+	</div>
+	<!-- 关于聚匠堂 -->
+	<a name='about'>
+		<div class="about">
+			<div class="jjt">
+				<div class="up">隐私政策</div>
+				<div class="down">
+					聚匠堂家具行业管家专为木制品、家具类人士量身定制，是一家集工作招聘、代理入驻、材料供应、二手设备等一系列项目辅助木制品企业成长的综合型平台。人才，是企业发展最核心的要素，聚匠堂家具行业管家为企业和求职者搭建完善的平台，创建良好的条件，提供优质、精准的家具求职招聘信息及家具管理，完美的诠释"网聚匠才，寻匠无忧"的品牌定位。改变了传统的家具人力信息笼统、不精准的通病。还可通过聚匠堂APP入驻功能申请成为聚匠堂的合作伙伴，合作共赢。
+				</div>
+			</div>
+		</div>
+	</a>
+
+
+	<!-- 底部 -->
+	<div class="middle">
+		<div class="left">
+			<span><a href="#">网站首页</a></span>
+			<span>|</span>
+			<span><a href="#intro">聚匠堂APP</a></span>
+			<span>|</span>
+			<span><a href="#about">关于我们</a></span>
+			<span>|</span>
+			<span><a href="http://www.jjtchina.com/prolicy.html">隐私政策</a></span>
+			<span>|</span>
+			<span><a href="">用户协议</a></span>
+		</div>
+		<div class="right">
+			<span>Copyright© 聚匠堂有限公司2019</span>
+			<span>皖ICP备12345678号</span>
+			<span>技术支持：聚匠堂科技</span>
+		</div>
+	</div>
+	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(function ($) {
+			$.post('http://jujiangtang.zanhf.com/api/client/api/client/passport/agreement', {},function (res) {
+				console.log(55)
+				console.log(res)
+			})
+		})
+
+	</script>
+</body>
+
+</html>
